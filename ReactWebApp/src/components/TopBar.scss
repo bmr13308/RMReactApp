@@ -1,0 +1,71 @@
+@import '../variables';
+
+.TopBar {
+  background: $surface;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+
+  font-size: 20px;
+  height: 72px;
+  line-height: 72px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  flex: 0 1 72px;
+}
+
+.TopBar-menu {
+  margin-right: 40px;
+}
+
+.TopBar-menu-item {
+  display: inline-block;
+  padding: 0px 20px;
+  font-weight: 500;
+  position: relative;
+
+  &:hover {
+    background: $background;
+    cursor: pointer;
+  }
+
+  &:hover::after {
+    content: ' ';
+    height: 3px;
+    width: 100%;
+
+    background: $secondary;
+    position: absolute;
+
+    bottom: 0;
+    left: 0;
+  }
+}
+
+.TopBar-logo {
+  font-weight: bold;
+  font-size: 30px;
+  margin-left: 40px;
+}
+
+.TopBar-search {
+  font-weight: bold;
+  font-size: 16px;
+  margin-left: 40px;
+  line-height: 16px;
+  height: 16px;
+  font-weight: 400;
+  align-self: center;
+}
+
+.App-header {
+  background-color: $background;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: $text-m;
+}

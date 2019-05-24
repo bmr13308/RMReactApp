@@ -1,0 +1,61 @@
+@import '../variables';
+
+.Board {
+  flex: 1 1 auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  background: url(/logo.svg);
+  background-size: 100px;
+
+  padding-bottom: 40px;
+}
+
+.Board-row {
+  text-align: center;
+}
+
+.Board-row-shadow {
+  display: inline-block;
+  margin: 20px;
+  height: 120px;
+  background: $surface;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.Board-edit {
+  display: flex;
+
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  width: 400px;
+  height: 400px;
+
+  background: $surface;
+
+  border-radius: 100%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+
+  position: absolute;
+  top: 50%;
+  right: 40px;
+  margin-top: -200px;
+}
+
+.Board-edit-button {
+  display: inline-block;
+  width: auto;
+  background: $primary;
+  color: $on-primary;
+  font-weight: 500;
+  border: none;
+  font-size: 16px;
+  line-height: 24px;
+  height: 50px;
+  margin: 10px;
+  margin-top: 180px;
+  font-family: 'Roboto';
+}

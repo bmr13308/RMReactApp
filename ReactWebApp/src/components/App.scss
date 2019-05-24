@@ -1,0 +1,30 @@
+@import '../variables';
+
+.App {
+  color: $text-m;
+  background: $background;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  position: relative;
+}
+
+.App-bg {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url('/logo.svg');
+  background-size: 100px 10px;
+}
+
+.App-card-holder {
+  margin: 40px;
+}
+
+.App-footer {
+  flex: 0 1 32px;
+  line-height: 32px;
+  text-align: center;
+  color: $text-d;
+  background: $footer;
+}
